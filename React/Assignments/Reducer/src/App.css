@@ -1,0 +1,19 @@
+
+.MainContainer{
+height: 10;
+width: 10rem;
+background-color: rgb(119, 17, 130);
+margin-top: 20%;
+margin-left: 45%;
+  
+
+}
+button{
+  
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  width: 1rem;
+  
+}
