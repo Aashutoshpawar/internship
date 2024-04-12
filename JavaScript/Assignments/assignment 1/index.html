@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <marquee behavior="" direction="right">
+        <h1>BASIC CALCULATOR</h1>
+    </marquee>
+    <div id="buttons">
+        <button class="button" value="Addition" id="addition"  onclick="add()">Addition</button>
+        <button class="button" value="subtraction" id="subtraction" onclick="sub()">Subtraction</button>
+        <button class="button" value="multiplication" id="multiplication" onclick="mul()">Multiplication</button>
+        <button class="button" value="division" id="division" onclick="div()">Division</button>
+        <button class="button" value="mod" id="mod" onclick="mod()">MOD</button>
+    </div>
+    <div id="nodiv">
+        Enter 1st number = <input type="text" name="no1" id="no1">
+        Enter 2nd number = <input type="text" name="no2" id="no2">
+    </div>
+        <br>
+        <br>
+    <div id="centercontent">
+        operation = <input type="text" id="operation">
+        <br>
+        <br>
+        Answer = <input type="text" id="Answer">
+        <br>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

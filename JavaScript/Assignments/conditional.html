@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var shopamt =  prompt("Enter a Number"); 
+       var temp = 0;
+       if(shopamt < 10000){
+        console.log(" final amout = "+shopamt+" discount amount = 0");
+       }
+       else 
+       if(shopamt >= 10000 && shopamt <= 20000){
+        console.log(" final amout = "+shopamt);
+        temp1 = temp + (shopamt*10)/100;
+        console.log(" discount amount = " +temp1);
+       }
+       else
+       if(shopamt >= 20000 && shopamt <= 30000){
+        console.log(" final amout = "+shopamt);
+        temp1 = temp + (shopamt*20)/100;
+        console.log(" discount amount = " +temp1);
+       }
+       else
+       if(shopamt >= 30000 && shopamt <= 40000){
+        console.log(" final amout = "+shopamt);
+        temp1 = temp + (shopamt*30)/100;
+        console.log(" discount amount = " +temp1);
+       }
+       else
+       if(shopamt >= 40000 && shopamt <= 50000){
+        console.log(" final amout = "+shopamt);
+        temp1 = temp + (shopamt*40)/100;
+        console.log(" discount amount = " +temp1);
+       }
+       else{
+        console.log("input error please enter the proper amount");
+       }
+
+    </script>
+</body>
+</html>

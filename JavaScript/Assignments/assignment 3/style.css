@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+    
+}
+#cdw{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+#cdw input{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+#btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    
+}
+table{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+table input{
+    border: none;
+}

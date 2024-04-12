@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        //assignment swithch case 
+        //color change dynamically using js 
+        //VIBGYOR 
+        //take a div bo and apply styling 
+        //tanke input from user - VIBGYOR
+        //if - V
+        //set color box to - violet
+
+        var key = prompt("enter a value from VIBGYOR = ")
+
+        const violet = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='violet';
+        }
+        const indigo = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='indigo';
+        }
+        const blue = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='blue';
+        }
+        const green = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='green';
+        }
+        const yellow = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='yellow';
+        }
+        const orange = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='orange';
+        }
+        const red = ()=>{
+            let box = document.getElementById('box');
+            box.style.backgroundColor='red';
+        }
+        switch (key) {
+            case "V":
+                violet();
+                break;
+            case "I":
+                indigo();
+                break;
+            case "B":
+                blue();
+                break;
+            case "G":
+                green();
+                break;
+            case "Y":
+                yellow();
+                break;
+            case "O":
+                orange();
+                break;
+            case "R":
+                red();
+                break;
+        
+            default:
+                log("error");
+                break;
+        }
+    </script>
+</body>
+</html>

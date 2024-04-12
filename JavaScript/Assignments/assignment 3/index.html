@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="cdw">
+        <section>
+            Credit => <input type="text" id="credit"><br>
+            <input type="button" id="addbalance" value="Add balance" onclick="addbalance()">
+        </section>
+        <section>
+            Debit =><input type="text" id="debit"><br>
+            <input type="button" id="Debitbalance" value="Debit Balance" onclick="debitbalance()">
+        </section>
+        <section>
+            Wallet =><input type="text" id="wallet">
+        </section>
+    </div>
+    
+    <table border="solid">
+        <tr>
+            <th>SR.NO</th>
+            <th >Credit</th>
+            <th >Debit</th>
+            <th >Balance</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td >
+                <input type="text" style="color: green;" id="creditvalue">
+            </td>
+            <td >
+                <input type="text" style="color: red;" id="debitvalue">
+            </td>
+            <td >
+                <input type="text" style="color: green;" id="walletvalue">
+            </td>
+        </tr>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>

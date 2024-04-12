@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+h1{
+    color: orange;
+    margin-bottom: 2rem;
+}
+.button{
+    color: white;
+    background-color: blue;
+    height: 2rem;
+    width: 6rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
+#buttons .button{
+    position: relative;
+    left: 30%;
+    margin-right: 2rem;
+}
+#nodiv{
+    margin-left:29rem;    
+}
+#centercontent{
+    margin-left: 38rem;
+
+}
+#Answer{
+    margin-left: 0.9rem;
+}
+#reset{
+    height: 2rem;
+    width: 3rem;
+    background-color: blue;
+    margin-top: 2rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--Assignments on Events
+        Take A Div box height,width,background color
+        take two buttons 1.hide 2.show
+        button toggle- hide and show
+        -->
+    
+        <div id="box">
+
+        </div>
+        <button onclick="toggle()">Hide</button>
+        <button onclick="toggle2()">Show</button>
+    <script>
+        const toggle = ()=>{
+            let a1 = document.getElementById('box');
+            let isShow = true;
+
+            if(isShow){
+            a1.style.display='none';
+            isShow=false;
+            }
+          
+        }
+        const toggle2=()=>{
+            if(isShow!=true){
+                a1.style.display='block';
+                isShow=true;
+            }
+        }
+    </script>
+</body>
+</html>
