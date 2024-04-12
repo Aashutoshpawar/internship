@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Function
+    
+
+        Block of code  i.e bunch of js statements
+
+
+        Write once and reused multiple times or defined once and reused        
+        
+        We can reused functions by calling that specific function
+
+
+        we can called same function multiple times by passing differnet arguments
+
+    
+
+        mostly function called on events
+
+        JS is a event based
+    -->
+
+
+    <button onclick="Demo2()">Click Here</button>
+
+    <button onclick="Add()">Addition</button>
+
+    <button onclick="ChangeColor()">Change Color</button>
+
+    <h1 id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, laudantium.</h1>
+
+    <script>
+
+        // syntax
+
+        //function declartion or function defination 
+        function function_name() {
+            //block of code
+        }
+
+        //function calling
+        function_name();
+
+
+        // ********************************************************
+
+        // alert('hello alert function')
+
+        // function Demo() {
+        //     alert('Hello Function In JS');
+        // }
+        // Demo();
+
+
+
+        // **************************************
+
+        //fun defination/declartion
+        function Demo2() {
+            //block of code
+            alert('Hello Function on Click EVent');
+        }
+        // function calling
+        // Demo2()
+
+
+        // ****************************************************************
+
+
+        function Add() {
+            alert(100 + 100);
+        }
+        // Add();
+
+
+        // ********************************************************
+
+
+        // Eg
+
+        function ChangeColor()
+        {
+            // var res=document.getElementById('data').innerHTML;
+            // console.log(res);
+
+            //set
+            // document.getElementById('data').innerHTML="Welcome To The Modern JS";
+
+
+            // js dynamically color change
+            document.getElementById('data').style.color="orange";
+        }
+
+        
+
+
+    </script>
+
+
+
+</body>
+
+</html>

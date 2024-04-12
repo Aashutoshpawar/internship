@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- return keyword
+    
+
+        it returns value outside the function or executes a value outside a function
+
+        it stops the execution of your function after return data
+    
+
+
+    -->
+    <!-- <button onclick="Add(100,50)">click Here to add</button> -->
+
+    <script>
+
+        function Add(a, b) {
+            return a + b;
+        }
+
+        //catch
+        console.log(Add(100, 50));
+
+        // ************************************************
+
+        function greet(msg) {
+            return "Hello Dear " + msg;
+        }
+        var res = greet("Good Morning");
+        alert(res);
+
+
+
+        // ******************************************************************************8
+
+        function Demo(fname, lname) {
+            console.log("Hello Manoj");
+            return fname + " " + lname;
+
+            //doesnt execute
+            console.log("Hello Vaibhav");
+        }
+
+        console.log(Demo('John', 'Peeter'));
+
+        // *****************************************************
+
+        function Demo2(skill) {
+            return skill;
+            console.log("sdfghjk")
+        }
+
+        var res = Demo2("ReactJS");
+        document.write(res);
+
+
+    </script>
+</body>
+
+</html>

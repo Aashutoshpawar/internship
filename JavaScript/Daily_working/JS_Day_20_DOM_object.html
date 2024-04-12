@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        DOM - Document Object Model
+            - hirarchy of a html content or our web page i.e. tree based stracture 
+            - when our web page is loaded browser creates a object model
+                i.e. used to access html elelment and perform multiple operation 
+            - JavaScript can access and change all the elements of an HTML document 
+            - with the object model, javascript gets all the power it needs to create dynamic HTML:     
+    
+    
+        DOM can do -
+            - js can change the html elements in page
+            - js can change all heml attributes in the page 
+            - js can change all the css stules in the page
+            - js can remove existing html elements and attributes 
+            - js can add new html elements and attributes 
+            - js can react to all existing html events in the page
+            - js can create new html events in the page
+    
+
+        DOM Methods(to access html elements)
+            by  - id        - document.getElementById()
+                - className - document.getElementByClassName()
+                - tagname   - document.getElementByName()
+
+            universal 
+                - document.querySelectory(tagname/#id/.class)
+        -->
+
+    <h1 id="data"> HTML Dom elements</h1>
+    <button onclick="DomHandler1()"> click here </button>
+
+    <p class="data2">Hello1</p>
+    <p class="data2">Hello2</p>
+    <p class="data2">Hello3</p>
+    <p class="data2">Hello4</p>
+    <p class="data2">Hello5</p>
+
+    <hr>
+
+    <input type="text" name="username" value="john peter">
+
+    <script>
+        var doc = document;
+        console.log(doc);
+        console.log(document.head);
+
+        //*************************************************************
+        // get data using id
+        function DomHandler1() {
+            //get data
+            var res1 = document.getElementById(`data`);
+            console.log(res1.innerHTML);
+            //set data
+            document.getElementById("data").innerHTML = "hello world";
+            //styling 
+            res1.style.color = "orange";
+        }
+        //*************************************************************
+        // get data using class name
+        // to access the elemtns you have to user number indexing 
+
+
+        var res2 = document.getElementsByClassName("data2");
+        console.log(res2.innerHTML); //undefined
+        console.log(res2[3].innerHTML); //Hello 4
+
+        //to access all elements
+        for (let i = 0; i < 5; i++) {
+            console.log(res2[i].innerHTML);
+        }
+        //*************************************************************
+        //set data 
+        document.getElementsByClassName("data2")[2].innerHTML = "hello this is aashutosh";
+
+        //for(let i=0;i<5;i++){
+        //    res2[i].innerHTML="New Content";
+        //}
+
+        //**************************************************************
+
+        var res4 = document.getElementsByTagName("p")[0].innerHTML;
+        console.log('************');
+        console.log(res4);
+
+        //**************************************************************
+        //by name
+        //get data
+        var res5 = document.getElementsByName("username")[0];
+        console.log(res5);
+
+        //**************************************************************
+
+        //universal selector - returns 1st occuring content no indexing is useful
+        //document.querySelector(#id/.class/tag name);
+
+        var res6 = document.querySelector('#data').innerHTML;
+        alert(res6);
+
+        var res6 = document.querySelector('.data2').innerHTML;
+        alert(res6);
+
+        var res6 = document.querySelector('input').value;
+        alert(res6);
+
+        //querySelectorAll() - return all html elements which we are specified by selector
+        //to access the elements here we are going to use indexing
+            var res8 = document.querySelectorAll('.data2')[1].innerHTML;
+            console.log(res8);
+    </script>
+
+</body>
+
+</html>

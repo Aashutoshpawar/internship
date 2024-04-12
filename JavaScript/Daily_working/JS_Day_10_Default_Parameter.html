@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function User(a,b,c) {
+            console.log(a+b+c);
+        }
+        User(100,20,40);//
+        User(50,50,10);//110
+
+        User(50,50);//NaN -50+50+ =NaN
+
+        // ****************************************
+
+        // default parameter
+        // when we didnt pass a sufficient arguments while function calling at that time used default parameter
+        //  i.e  set default value while function declartion
+
+        // function Add(x,y,z)
+        // {
+        //     return x+y+z;
+        // }
+
+        // var res=Add(10,20,30);
+        // alert(res);
+
+        // ****************************************
+
+        function Sum(a=0,b=0,c=0) {
+            console.log(a+b+c);
+        }
+        Sum(10,30,40);
+        Sum(10,30);//40+0=40
+
+        Sum(10);//10
+        Sum();//0
+
+        // ***************************************
+
+        function User(fname="XYZ",lname="ABC")
+        {
+            console.log(fname+lname);
+        }
+
+        User('John','Peeter');
+        User('John');
+
+
+
+
+    </script>
+
+</body>
+
+</html>

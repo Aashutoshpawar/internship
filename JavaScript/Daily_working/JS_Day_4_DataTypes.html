@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Data Types
+
+
+        Primitive (Pre-Defined)- int,float,string,boolean,bigint,char,double
+
+        Non-Primitive (User defined DT i.e developed by developers)-- Derived from Primitive
+        
+        Array object class
+
+
+
+        In JS
+
+
+        Primitive DT- number,string,boolean,null,undefined,symbol,
+
+
+        Non Primitive DT-Array ,object
+    
+    
+
+    -->
+
+
+    <script>
+        // JS is a dynamic
+
+        // let age=25.25;
+        let age = 25;
+        console.log(age);
+
+        // typeof operator - to check variable data type
+        console.log(typeof age);//number
+
+        // ***********************************************
+
+        // string-stored a single value in a "" or ''
+
+        let name = "Manoj";
+        console.log(name);
+
+        console.log(typeof name);//string
+
+        // ***************************************************
+
+        // boolean DT
+        //true or false
+
+
+        var isElgible = false;
+
+        console.log(isElgible);
+        console.log(typeof isElgible);//boolean
+
+        // ************************************************************
+
+        // null;
+
+        // null is a object in a JS
+        //as per expert is a bug
+
+        let emp_id;
+        console.log(emp_id);//undefined
+
+
+        let emp_role = null;
+        console.log(emp_role);//null
+
+        console.log(typeof emp_role);
+
+
+
+        // ***************************************
+
+
+        //empty value
+        let emp_role2 = "";
+        console.log(emp_role2);
+        console.log(typeof emp_role2);//string
+
+
+
+        // *****************************************************************
+        // undefined- when we declared variable but not initilize any value
+        //by default value undefined and data type also
+
+        let emp_ctc;
+        console.log(emp_ctc);//undefined
+
+        console.log(typeof emp_ctc);//undefined
+
+
+        // ******************************************************
+        // symbol
+
+        //Called symbol function ie must return unique value
+        // Symbols are used to create object properties,
+        //  for example, when you want to assign a unique identifier to an object.
+
+        var a = 10;
+        var b = 10;
+        console.log(a == b);//true
+
+        console.log(Symbol(a) == Symbol(b));//false
+
+        // ****************************************************************************
+
+
+
+
+
+        // Non-primitve DT
+
+        // Array and Object
+
+
+        // Array- is a collection of similar or differnt type of element
+        //  i.e we can stored any type of data in a single variable
+
+        // starts indexing from 0
+
+        // ########
+        //Array is a special stype of object in a JS
+
+        const arr=[10,20,"ABC","XYZ",true,null];
+        console.log(arr);
+
+        console.log(typeof arr);//object
+
+        // ***************************************************************
+
+        // Object-is a entity having method and properties
+
+        //we can stored large amount of data 
+
+        //key:value pair data
+
+        const obj={
+
+            // key:value;
+            id:1,
+            name:'Peeter',
+            isElgible:true,
+            emp_role:null,
+            emp_skill:['React','AWS','NodeJS'],
+
+        }
+
+        console.log(obj);
+
+        console.log(typeof obj);//object
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

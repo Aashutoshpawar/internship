@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- synchronous execution
+
+        line by line execution
+
+        JS- By default
+    
+
+
+function A()
+{
+    //api calling
+    //50s
+}
+function B()
+{
+    //normal execution
+    //10
+}
+
+        ***************************************************
+        Asynchronous execution
+
+        doesnt block the browser i.e there is no line by line execution
+
+        Async programming-
+
+        callback function
+        promises
+        async await
+        setinterval
+        settimeout
+
+//parallel execution
+        function A()
+        {
+//api calling
+
+//10
+        }
+
+        function B()
+        {
+            //normal
+            //10s
+        }
+
+    
+    -->
+
+    <!-- ************************************************************ -->
+
+
+    <!-- callback function -->
+
+    <!-- 
+        "I will call back later!"
+        
+        one function callled/execute into another function 
+    
+
+        passed a one function to another function as a argument
+
+        i.e one function execute after another function finished their execution
+    
+    -->
+
+    
+
+
+
+    <script>
+
+
+        // function B() {
+        //     console.log("B");
+        //     A();
+        // }
+
+        // function A() {
+        //     console.log("A");
+        // }
+
+        // B();
+
+
+
+        function A() {
+            console.log("Function A");
+        }
+
+
+        //passing a parameter for above function
+        function B(callback) {
+            //calling function
+            callback();
+
+            console.log("Function B");
+        }
+
+        //passed 'A' function as an argument
+        B(A)
+
+
+        // ************************************
+
+
+        function Greet(msg) {
+            console.log("Hello " + msg);
+        }
+
+
+        function Message(callback, name) {
+            callback("Good Morning");
+            console.log(name);
+        }
+
+        Message(Greet, "Manoj");
+
+        // ***********************************************
+
+
+        function X(name) {
+            return name;
+        }
+        function Y(callback, skill) {
+
+            console.log(callback("Aniket"));
+            return skill;
+        }
+
+        var res = Y(X, "ReactJS")
+        console.log(res);
+
+        // ***************************
+
+        // function A()
+        // {
+        //     console.log("")
+        // }
+
+        // function B(callback)
+        // {
+        //     callback()
+        // }
+        // B(A)
+
+    </script>
+
+</body>
+
+</html>

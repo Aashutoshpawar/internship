@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //object Iterating 
+        const obj = {
+            p_id: 1234,
+            p_name: "laptop",
+            P_category: "hp",
+            price: "49999",
+            P_brand: ["HP", "lenovo", "Apple", "Sony", "Toshiba", "Xiaomi", "Samsung", { p_ram: "8gb" }],
+            p_subrand:{
+                brand1:"HP pavillion",
+                brand2:"HP 14",
+            }
+
+        }
+
+        //for in - return key value data
+        //for of - must be iterable and return only values
+        
+
+        const userData={
+            user_name :"John peter",
+            user_ctc : "20 LPA",
+            user_domain : "wev Dev",
+            user_skill : {
+                skill1:"aws",
+                skill2:"reactjs",
+                skill3:"node.js",
+            }
+        };
+        
+
+        for (let keys in userData.user_skill){
+            console.log(keys);
+            console.log(keys+" "+userData.user_skill[keys]);
+        }
+
+    </script>
+</body>
+
+</html>

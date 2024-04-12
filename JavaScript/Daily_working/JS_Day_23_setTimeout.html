@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 400px;
+        width: 400px;
+        background-color: orange;
+        border: solid red 5px; 
+        margin: 50px auto;
+
+    }
+</style>
+<body>
+    <div class="box1" id="divbox">
+
+    </div>
+    <script>
+        //setInterval(function(){
+        //    alert("Hello set Interval Functiom ")
+        //},3000);
+        //setTimeout(function(){
+        //    alert("setTimeout called")
+        //},3000);
+            var br=0;
+        setInterval(()=>{
+            br+=10;
+            document.getElementById('divbox').style.borderRadius = br+"px";
+
+        })
+    </script>
+</body>
+</html>

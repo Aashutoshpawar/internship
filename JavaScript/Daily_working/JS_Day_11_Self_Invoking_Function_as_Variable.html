@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- self invoking- no need to call that function
+    self calling -() -->
+
+    <script>
+        (
+            function()
+            {
+                alert("Hello Self Invoking Function");
+            }
+        ) ()
+
+
+
+
+        // ****************************************************
+
+        // function treat as a  variable 
+
+        function Add(a=0,b=0)
+        {
+            return a+b;
+        }
+        var res=Add(10,20)+100+200;
+        console.log(res);
+        
+    </script>
+</body>
+</html>

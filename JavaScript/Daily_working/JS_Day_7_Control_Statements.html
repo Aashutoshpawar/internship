@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- Conditional Statements - if, if else, if else if else, switch
+
+        Its checks the conditions
+
+        if- it checks only one condition
+        if else - check 2 conditions
+
+        if else if else - 2 or more conditions
+
+
+        switch- multiple cases handle  at   time
+
+    
+    
+        Looping Statement- 
+
+        while,do while, for,
+        
+        for in,  for of ,for each,map.....
+    -->
+
+
+
+    <script>
+
+        // JS
+
+
+        // if- one condition
+
+        // if(condition/true/10/0/false)
+        // {
+        //     //execute code
+        // }
+
+
+        // var a=10;
+
+        // if(true)
+        // {
+        //     alert('Hello If Statement');
+        // }
+
+
+
+        // ***********************************************************
+
+        // given no even or odd
+
+
+        // var no=20;
+
+        let no = parseInt(prompt('Enter A No ?', 0));
+        // console.log(typeof no);
+
+        if (no % 2 == 0) {
+            // alert("Given No "+no+ " Is Even No ");
+
+            alert(`Given No ${no} Is Even No`);
+        }
+
+        if (no % 2 !== 0) {
+            alert(`Given No ${no} Is Odd No`);
+        }
+
+
+
+        // *****************************************************************
+
+        // if else
+
+
+        // if (true) {
+        //     //code
+        // }
+
+        // else {
+
+        // }
+
+
+        // *****************************************************************************
+
+
+        // let msg = "Good Morning";
+
+        // if (msg) {
+        //     alert('Best Luck and  Great Day AHead');
+        // }
+        // else {
+        //     alert('Hello Welcome');
+        // }
+
+
+
+        // ***************************************************************************
+
+
+        // let number = +prompt('Enter A No to check Even or odd', 0);
+
+        // if (number % 2 == 0) {
+        //     console.log(`${number} is a Even No`);
+        // }
+
+        // else {
+        //     console.log(`${number} is a odd No`);
+
+        // }
+
+
+        // **********************************************************
+
+
+        // take shop amt from user
+        //shop_amt>=10000
+
+        // disc = 20 %
+
+
+        // else
+        // disc = 0;
+
+
+        let shop_amt = +prompt('Enter Your Shopping Amount ?', 0)
+        var disc = 0;
+
+        if (shop_amt >= 10000) {
+            disc = 20;
+        }
+
+        else {
+            disc = 0;
+        }
+
+        document.write(`<h1>Hello Dear Your Shopping Amount Is ${shop_amt}</h1>`)
+        var disc_amt = shop_amt * disc / 100;
+
+        document.write(`<h2>Hello You Get ${disc} % Discount And Your Discounted Amount Is ${disc_amt}</h2>`)
+
+        var net_total = shop_amt - disc_amt;
+        document.write(`<h1>Your Net Total Amount Is <mark> ${net_total}  </mark> </h1>`)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- ways to write -->
+
+    <script>
+
+        // normal function
+
+        // function Demo()
+        // {
+
+        // }
+        // Demo()//
+
+
+        // *****************************************
+
+        // variable expression-  function treated as like any other variable
+
+
+        var Demo = function A() {
+            alert('Hello Variable expression');
+        }
+        Demo();
+
+
+        // ***********************************************
+
+        //anonymous function- no name to the function
+
+        var Demo2 = function(a = 1, b = 1) {
+            console.log(a * b);
+        }
+
+        Demo2(10);
+
+        // ***************************************
+
+        //Es-6 feature
+        //most important
+        // Arrow function / lamda function /fat arrow function
+
+        //modern way
+
+        // most efficient and easy way to write your function
+
+        //most readable
+
+        //no need to bind this keyword i.e by default access
+
+        //syntax
+
+
+        // let User = () => {
+        //     //block of code
+        // }
+        // User()
+
+
+
+        let Demo3 = () => {
+            alert('Hello fat Arrow Function')
+        }
+        Demo3();
+
+
+        //single line
+
+        const Demo4 = () => console.log("hello lamda function");
+        Demo4();
+
+
+
+        //when we return something must { return }
+
+        const Demo5=(a,b)=>{return a+b};
+
+        console.log(Demo5(100,150));//250
+
+
+
+        // no need of () when u have single parameter
+
+        const Demo6=a=>console.log("Hello");
+        Demo6(100);
+
+
+
+
+        // **************************************************8
+        // callback function
+        // self invoking function
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

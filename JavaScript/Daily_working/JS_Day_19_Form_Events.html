@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        onfocus - when we focus on input field
+        onblur - when we lost our focus 
+        onselect - when we select any content 
+        onchange - when we change any option ex.select
+        onsubmit - when we submit our form 
+
+    
+    <label for="">Emp Name</label>
+    <input type="text" name="" id="emp_name" onfocus="demo1()" onblur="demo2()">
+
+    <input type="text" id="data1" onfocus="demo3('data2')">
+    <input type="text" id="data2" onfocus="demo3('data1')">
+    <input type="text" id="data4" value="front end" onselect="demo6()">
+    <hr>
+
+    <label for="">choose your education </label>
+    <select name="user_edu" id="user_edu" onchange="useredu()">
+        <option value="select">select</option>
+        <option value="Mca/mcs">Mca/mcs</option>
+        <option value="bca/bcs">bca/bcs</option>
+        <option value="me/m.tech">me/m.tech</option>
+        <option value="b.e/b.tech">b.e/b.tech</option>
+        <option value="other">other</option>
+    </select>
+    -->
+    <form action="" onsubmit="alert('congo your form has been submitted')">
+        <label for="">your email</label>
+        <input type="email" placeholder="enter your email ">
+        <br>
+        <label for="password">
+            <input type="password">
+        </label>
+        <br>
+        <button>submit</button>
+
+    </form>
+
+
+    <script>
+       // const demo1=()=>{
+        //    document.getElementById("emp_name").style.backgroundColor="orange"
+       // }
+      //  const demo2 =()=>{
+       //     document.getElementById("emp_name").style.backgroundColor="green";
+      //  } 
+
+      //const demo3=()=>{
+       // document.getElementById(result).style.backgroundColor="tomato";
+
+      //}
+      //function demo6(){
+      //  var res = document.getElementById("data4").value;
+      //  alert(`you selected ${res} `);
+      //}
+
+      // onchange -
+
+      function useredu(){
+        var res = document.getElementById(`user_edu`).value;
+        alert('congrats your education is'+ res);
+      }
+      
+
+      //*********************************************************************
+
+      //onsubmit 
+        F
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

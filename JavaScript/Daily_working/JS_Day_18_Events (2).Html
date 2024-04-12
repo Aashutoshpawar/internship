@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box1{
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            background-color: orange;
+        }
+        .box2{
+            height: 400px;
+            width: 400px;
+            margin: 50px;
+            background-color: green;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <!--
+        Events - do something on users action 
+               - performing some actioin on users action 
+
+        types -
+        1.mouse
+                onclick - 
+                ondoubleclick-
+                onContextMent-
+                onMouseover,onmouseleave,onmouseenter,onmouseup,onmousedown,onmousemove,onmousewheel
+        2.keyboard events
+                onKeypress,onKeytype,onkeydown
+        3.form events
+                onfocus,onblur,onchange,onselect,onreshize
+        4.window events
+                onload,onscroll,onresize
+    -->
+
+    <button onclick="alert('hello clicked event')">click here onclick </button>
+    <button ondblclick="demo1()">click here</button>
+
+    <!--context menu = when we click right button of mouse the menu appears-->
+    <button oncontextmenu="alert('click here context menu')">click here for context menu</button>
+<!--*******************************************************************-->
+
+    <div id="box1" class="box1" onmouseover="demo2()" onmouseleave="demo3()"></div>
+
+    <div class="box2" id="box2" onmouseenter="demo4()" onmouseout="demo()" onmousedown="demo6()" onmouseup="demo7()"></div>
+    
+    <script>
+        
+        function demo1(){
+            alert("you have double clicked ");
+        }
+        function demo2(){
+            document.getElementById('box1').style.backgroundColor="pink";
+        }
+        function demo3(){
+            document.getElementById("box1").style.backgroundColor="blue";
+        }
+        //******************************
+        //onmouseenter - when we enter on specific elements 
+        //onmouseout - when we out from specific element 
+
+        const demo4=()=>{
+            document.getElementById('box2').style.backgroundColor="magenta";
+        }
+        const demo5=()=>{
+            document.getElementById('box2').style.backgroundcolor="red";
+        }
+        const demo6=()=>{
+            document.getElementById("box2").style.backgroundcolor="yello";
+
+        }
+        const demo7=()=>{
+            document.getElementById("box2").style.backgroundcolor="cuan";
+        }
+    </script>
+</body>
+</html>

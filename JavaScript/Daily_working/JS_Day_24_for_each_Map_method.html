@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--For eachh and map
+        Used to Iterate or looping elements of an array object 
+    -->
+    <script>
+        //iterating
+            //1.for
+            //2.for in - return key value pair
+            //3.for of - must iterable 
+
+            //learn about entry method
+
+            //syntax 
+            //for each(arrowfun(val,index,Array)=>{
+
+            //})
+
+            //array
+            const no = [10,5,15,25,30,10];
+            var res = no.foreach((val,index,array)=>{
+                console.log(val);
+            });
+            //returns undefined 
+            console.lof(res);
+            //its not chainable 
+            //we cant used other array methods like filter,find
+
+            //**************************************
+
+            const no2 = [5,10,20,30,40,50];
+            no2.forEach((val,index,array)=>{
+                 val*10;
+            });
+
+
+            const user=[
+            {   id:1,
+                emp_Name:'ABC',
+            },
+            {
+                id:2,
+                emp_name:"XYZ",
+            }
+
+            ]
+            user.foreach((val , index , array)=>{
+                console.log(val);
+            });
+
+            //*******************************************************
+            //map - similar to forEach
+            //chainable - ither array methods 
+            //calls a defined callback function on each element of an array
+            //and returns an array that contains the results
+            const no3 = [10,20,30,40,60];
+            no3.map((val,index , array)=>{
+                console.log(val);
+            });
+            var result1 = no3((val)=>{
+                return val;
+
+            })
+            console.log(result1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="history.back()">forward</button>
+    <button onclick="history.forward()">backward</button>
+    <button onclick="history.go(-1)">directly</button>
+
+    <!--print-->
+    <button onclick="window.print()">print here</button>
+
+    <!--to open new page-->
+    <button onclick="window.open(`https://www.amazon.in`)">Open Amazon</button>
+
+    <button onclick="window.close()">close window</button>
+
+
+    <script>
+        var doc = document;
+        console.log(doc);
+
+        var result = window;
+        console.log(result);
+
+        //dialog boxes 
+        //alert()-ok and return undefined 
+        //confirm() - if ok it passes true and viseversa
+        //prompt() - to get dynamic data from user
+
+        //var data1 = window.alert("Hello");
+        //console.log(data1);
+
+        //var data2 = window.confirm("Are you sure ?");
+        //console.log(data2);
+
+        //var data3 = window.prompt("Enter Your Age");
+        //console.log(data3);
+
+        //***************************************************
+
+        //history
+        //var his = window.history;
+        //console.log(his);
+
+
+        //3 methods are there in history
+        //history.back()
+        //history.forward()
+        //history.go()
+
+
+        //*************************************************
+
+        //location
+        var loc = window.location;
+        console.log(loc);
+        console.log(loc.host);
+        console.log(loc.hostname);
+        console.log(loc.protocol);
+        console.log(loc.port);
+        console.log(loc.pathname);
+
+        //**************************************************
+        
+        //navigator
+        var nav = navigator;
+        console.log(nav);
+
+        console.log(nav.cookieEnabled);
+        console.log(nav.appCodeName);
+        console.log(nav.appName);
+        console.log(nav.geolocation);
+        console.log(nav.clipboard);
+
+        //************************************************
+
+        //screen
+        var scr = window.screen;
+        console.log(scr);
+        console.log(scr.availHeight);
+        console.log(scr.height);
+
+        console.log('inner height'+window.innerHeight);
+        console.log('inner height'+window.outerHeight);
+        console.log('outer height'+window.innerWidth);
+        console.log('outer height'+window.outerWidth);
+        console.log(scr.pixelDepth);
+        console.log(scr.colorDepth);
+
+    </script>
+</body>
+</html>

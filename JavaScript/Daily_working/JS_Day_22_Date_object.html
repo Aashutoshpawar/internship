@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let today = new Date();
+        document.write(`<h1>${today}</h1>`);
+
+        //get seprate date every indexing starts from 0 of getmethod
+        document.write(`Current year is ${today.getFullYear()}`);
+        document.write(`Current Month is : ${today.getMonth()}`);  //ans = 1 because indexing starts from 0
+        document.write(`Current Month is : ${today.getDay()}`);
+        document.write(`Current Month is : ${today.getHours()}`);
+
+        // to set the data
+        var newDate = new Date();
+        newDate.setFullYear(2030);
+        newDate.setMonth(8);
+        newDate.setHours(10);
+        console.log(newDate);
+
+        //additional methods
+        //toLocalDateString() - return todys only date
+        //toLocaleTimeString()- return only current time
+        //toLocaleString() 
+
+        var date = new Date();
+        alert(date.toLocaleDateString());
+        alert(date.toLocaleTimeString());
+        alert(date.toLocaleString());
+        
+    </script>
+</body>
+</html>

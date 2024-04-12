@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 
+
+        function Demo(p = 0, q = 0, r = 0) {
+            console.log(p + q + r);
+        }
+
+        // Demo(100,200,400);//
+
+        // Demo(100,50);//150
+
+
+        //JS By defaut ignores extra values i.e arguments and return result
+        Demo(20, 30, 50, 20, 100, 200, 400);//100
+
+
+
+        // arguments and rest Parameter (Modern JS- ES6)
+
+        // ***************************************************
+        //arguments-  used to handle extra arguments
+
+        //return a whole array 
+
+        //it doesnt return an pure array
+
+
+
+        function Sum(a = 0, b = 0) {
+            console.log(a + b);
+
+            // arguments
+            console.log(arguments);
+
+
+            // ***********************************************
+            var sum = 0;
+            // iterating
+            for (let i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+
+                sum += arguments[i];
+            }
+
+            // *******************************************************************
+            // for of- used to iterate an array and return a value
+
+            for (let x of arguments) {
+                console.log(x);
+            }
+
+
+            // **************************************************
+
+            console.log(`Total Sum Is ${sum}`);
+
+        }
+        // Sum(500,100);//600
+
+        // 
+        Sum(500, 100, 50, 100, 200, 300);//600
+
+
+    </script>
+
+
+</body>
+
+</html>

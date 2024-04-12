@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--addEventListner Method
+        Used to attached events handler to html elements
+        -->
+        <button id="btn1">addEvent </button>
+        <button>remove event</button>
+        <script>
+            //document.getElementById('btn1')
+            btn1.addEventListener('click',()=>{
+                alert('hello addEvent listner method');
+            });
+            function removeEvent(){
+                alert("successfully removed");
+                btn1.removeEventListner('click',fun1);
+                
+            }
+        </script>
+</body>
+</html>

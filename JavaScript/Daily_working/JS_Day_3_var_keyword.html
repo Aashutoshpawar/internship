@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // var Keyword
+
+        // used to declared JS Variable
+
+        var age = 25;
+        alert(age);
+
+        var name = "Aniket";
+        console.log(name);
+
+        document.write(name);
+
+
+        // we can declared JS Variable without initlization
+        var skill;
+        skill = "ReactJS";
+
+        console.log(skill);
+
+
+        // we can update value also
+        var UserEmail = "abc@gmail.com";
+        UserEmail = "john@gmail.com";
+
+        console.log(UserEmail)
+
+
+        //we can redeclared variable with same name
+
+        //its creates a issue
+
+
+        var emp_name = "Vaibhav";
+        var emp_name = "Sanket";
+
+        console.log(emp_name);
+
+
+
+
+
+        // scope
+        //Global Scope
+        //block scope
+
+
+        // var -Global scope
+
+        var no = 100;
+        console.log(no);//100
+        if (true) {
+            var no = 200;
+            console.log(no);//200
+        }
+        console.log(no);//200
+
+
+
+       
+       
+        var age1 = 35;
+        
+        console.log(age1);//35
+        function A() {
+            var age1= 25;
+            console.log(age1);//25
+        }
+        A();
+        console.log(age1);//35
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

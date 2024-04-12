@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Methods to perform on object and manipulate data -->
+
+
+    <script>
+
+        // Object.keys()
+        // Object.values()
+        // Object.entries()
+        // Object.create()
+        // Object.assign()
+        // Object.is()
+        // Object.isFrozen()
+        // Object.isSeal()
+        // Object.isExtensible()
+        // Object.Freeze()
+        // Object.Seal()
+        // Object.getOwnPropertyNames()
+        // Object.getOwnPropertyDescriptors()
+        // Object.getOwnPropertySymbols()
+        // Object.hasownproperty()
+
+
+
+        const obj = {
+            p_id: '#2323',
+            p_name: 'Apple',
+            p__ram: '8GB',
+            p_rom: '128GB',
+            p_os: 'IOS 17',
+        }
+
+        //we can update value
+        obj.p__ram = "16 GB";
+        obj.P_brand = "Iphone 15";
+
+        console.log(obj);
+
+
+        // Object()
+        // Provides functionality common to all JavaScript objects.
+
+        // keys-return a keys of given a object in an array format
+        //getOwnPropertyNames()
+
+        console.log(Object.keys(obj));
+
+        //return own properties of an object are those that are defined directly
+        // on that object, and are not inherited from the object's prototype
+
+        console.log(Object.getOwnPropertyNames(obj));
+
+
+        // ******************************************************************
+
+        // values- return a obj values of a given object in an array format
+
+        console.log(Object.values(obj));
+
+        // *************************************
+
+        // entries()-return both key value data of a given object in an ARray format
+
+        console.log(Object.entries(obj));
+
+        //for of
+
+        for (let x of Object.entries(obj)) {
+            console.log(x);
+        }
+
+
+
+
+        // *******************************************************
+
+
+        // is()- return true if same values
+
+        console.log(Object.is(10, 20));//false
+        console.log(Object.is(10, 10));//true
+        console.log(Object.is(10, "10"));//false
+
+
+
+        // isNaN()
+        //isfinite()
+
+
+        console.log(isNaN(10));//false
+        // ******************************************************
+
+        //It prevents the modification of existing object 
+        // i.e we cant add or remove object properties ,attributes and values
+
+        // freeze()- modify both properties and add new properties
+        // seal()-  only we can modify but not add new prperties
+
+
+        const obj2 = {
+            name: 'Manoj',
+            skill: 'React',
+            role: 'Intern',
+        }
+
+
+        //cant add properties and we cant modify also
+        Object.freeze(obj2);
+
+        // obj2.name = "Prajwal";
+        // obj2.age="25";
+
+        // console.log(obj2);
+
+
+        // 
+        Object.seal(obj2);
+
+        obj2.name = "Prajwal";
+
+        //we cant add properties
+        obj2.age = "25";
+
+        console.log(obj2);
+
+
+
+        // **************************************************
+        // /return boolean value
+
+        // isFrozen()
+        // isSeal()
+        // isExtensible()
+
+        //returh true if object is freeze
+        console.log(Object.isFrozen(obj2));//ture
+        console.log(Object.isSealed(obj2));//true
+
+
+        //isExtensible()
+        //Returns a value that indicates whether new properties can be added to an object.
+
+        console.log(Object.isExtensible(obj2));//false
+
+
+        // *******************************************
+        // Object.create()
+
+
+        //Object.assign()-  used to copy one object values to a targeted object
+
+        //copy the values from one object to another object
+
+        const obj3 = {
+            name: 'XYZ',
+            age: 23,
+        }
+
+        const obj4 = {
+            skill: 'AWS',
+            role: 'Front end',
+        }
+        console.log(Object.assign(obj4, obj3, { id: 1 }));
+
+        // *************************************************
+
+
+        // prototypeOf
+
+        //object by default return protoype
+
+        //Returns the prototype of an object.
+
+
+        console.log(Object.getPrototypeOf(obj2))
+
+        // console.log(Object.setPrototypeOf());
+
+
+
+        // ******************************************************
+
+        console.log(Object.getOwnPropertyDescriptors(obj2));
+
+        //Returns an array of all symbol properties found directly on object o.
+        // Object.getOwnPropertySymbols()
+
+
+
+        // *******************************************************
+
+
+
+
+
+    </script>
+</body>
+
+</html>

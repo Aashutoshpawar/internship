@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nested callback -->
+
+    <script>
+
+        function A(fname) {
+            console.log("Function A" + fname);
+
+
+            //nested callback function
+            function X() {
+                console.log("Function X")
+            }
+
+            function Y(callback) {
+                callback();
+                console.log("Function Y");
+            }
+            Y(X);
+        }
+
+        function B(callback, lname) {
+            callback("John");
+            console.log("Function B" + lname);
+        }
+
+        B(A, "Peeter");
+
+
+        //Function A
+        //"Function X"
+
+        //Function Y
+        //Function B
+
+        // ******************************************
+
+        function X() {
+            function Y() {
+                console.log("Hello Nested normal function")
+            }
+            Y()
+        }
+
+        X();
+
+        // *******************************************************************
+
+        // const A = () => {
+        //     const B = () => {
+        //         console.log("Hello nested arrow function")
+        //     }
+
+        //     B()
+        // }
+        // A();
+
+        // *************************************************
+
+
+        function Add(x,y)
+        {
+            // x+y
+            //code
+            //nested function
+            function Sum(a,b)
+            {
+                console.log(a+b);
+            }
+            Sum(x,y)
+        }
+        Add(100,200);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Rest parameter-
+    
+        Modern JS Features
+        ES-6 Features
+
+
+        Handle only the extra value
+
+        return an pure array
+
+        indicate - ... 
+
+        A rest parameter must be last in a parameter list
+
+    -->
+
+
+    <script>
+
+
+
+        function Demo(a=0, b=0, c=0,...result) {
+            console.log(a+b+c);
+
+            console.log(arguments);
+
+
+            //rest parameter
+            console.log(result);
+
+
+            var sum=a+b+c;
+            for(let x of result)
+            {
+                console.log(x);
+                sum+=x;
+            }
+
+
+
+            console.log(sum)
+        }
+
+        Demo(10,20,30,100,200,300);//
+    </script>
+</body>
+
+</html>

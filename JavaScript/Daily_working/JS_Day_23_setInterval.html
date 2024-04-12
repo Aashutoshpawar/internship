@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            margin-left: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img id="img" src="./teddy.jpg" alt="">
+    <button onclick="Demo1()">Start Animation</button>
+    <button onclick="StartInterval()">Start Animation</button>
+    <button onclick="StopInterval()">Stop Animation</button>
+
+    <!-- SetInterval 
+
+        
+        syntax 
+            setInterval(function , interval)
+    
+    -->
+    <script>
+        var mar = 0;
+        const Demo1 = ()=>{
+            mar+=50;
+            img.style.marginLeft = mar + "px";
+            setInterval(Demo1,1000);
+        }
+        //callback function 
+       // setInterval(()=>{
+        //    alert("hello world");
+        //},2000);
+        //************************************
+        var x;
+        const StartInterval =()=>{
+            x=setInterval(Demo1,1000);
+        }
+        function StopInterval(){
+            clearInterval(x);
+        }
+    </script>
+    
+</body>
+</html>

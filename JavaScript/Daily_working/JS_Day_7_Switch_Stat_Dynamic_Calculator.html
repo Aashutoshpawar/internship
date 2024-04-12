@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- switch
+    
+    
+        used to handle multiple cases,operations at a same time
+    -->
+
+
+    <script>
+
+        // switch(data)
+        // {
+        //     case '':
+
+        // }
+
+
+        let month = prompt('Enter a Month No Between 1-12', 1);
+
+        switch (month) {
+            case '1':
+                alert('January');
+                break;
+
+            case '2': alert('Febuary Month');
+                break;
+
+            case '8': alert('August Month');
+                break;
+
+            default: alert('Pls Enter a Valid Case')
+        }
+
+        // **************************************************************************
+
+        let no1 = +prompt('Enter No 1');
+        let no2 = +prompt('Enter No 2');
+
+        let operation = prompt('Which Operation You Want to Perform -  -,+, /, %, * ')
+
+
+        switch (operation) {
+            case '+': alert(`${no1} + ${no2}=   ${no1 + no2}`);
+                break;
+
+            case '*': {
+                alert(`${no1} * ${no2}=   ${no1 * no2}`);
+                break;
+            }
+
+
+            case '-': alert(`${no1} - ${no2}=   ${no1 - no2}`);
+                break;
+
+
+            default: alert('Pls Enter A Valid Operation');
+
+        }
+    </script>
+</body>
+
+</html>

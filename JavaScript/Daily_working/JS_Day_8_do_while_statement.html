@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- do while
+    
+    
+        at least execute one time if conditions goes wrong
+
+        do
+        {
+            execute code
+
+        }while(condition)
+    -->
+
+
+    <script>
+
+        //
+
+        let a = 1;
+        do {
+            document.write("hello world<br>");
+            a++;
+
+        } while (a <= 10);
+
+
+
+        // ********************************************
+
+        // odd no 1-50
+
+        // let x=1;
+        // var sum=0;
+        // do{
+
+        //     if(x%2!==0)
+        //     {
+        //         document.write(x+" <br>");
+        //         sum+=x;
+        //     }
+        //     x++;
+
+        // }while(x<=50);
+
+        // document.write(sum);
+
+        // *************************************************************
+
+        // nested do while
+
+        let p = 1;
+        do {
+            document.write("<br>" + p + "<br>");//
+
+            //nested do while
+            let q = 1;
+            do {
+                document.write(q + " ");//
+                q++;
+            } while (q <= 10);
+
+            p++;
+
+        } while (p <= 20);
+
+
+
+
+    </script>
+</body>
+
+</html>

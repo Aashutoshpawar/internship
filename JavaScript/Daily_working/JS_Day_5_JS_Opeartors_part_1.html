@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Operators in JS -->
+
+
+    <!-- Unary- ++ --  -->
+    <!-- binary-
+    
+    
+        Arithmeatic Op- +,-,/,*,%
+        Increment/Decrement Op- ++,--
+        Assignment Op-  =
+        Equality Op- ==,===
+        Comparasion Op- > < >,>=, <=, !=
+
+        Logical Op-  && || !
+
+        Bitwise Op- >> ,<< ,<<< ,>>>  ,| (OR) , ^ (XOR,) ~(Not),&(AND)
+
+
+        In JS
+
+
+        ternary op
+        exponenatitaion Op
+        nullish coalscheing op
+
+        typeof op
+
+
+        ****************************************************
+        concatenation operator
+        NaN
+        Template Literal-
+
+
+
+
+
+    -->
+
+
+    <script>
+        // Arithmeatic Op- +,-,/,*,%
+
+        // a and b -operand
+        //+ - operator
+
+        // let a = 20;
+        // let b = 10;
+        // console.log(a + b);//30
+        // console.log(a - b);//10
+        // console.log(a * b);//200
+        // console.log(a / b);//2
+
+        // //return reminder
+        // console.log(a % b);//0
+
+
+
+        // Priority - 
+        //Higher priorit - * / %
+
+        // console.log(a + b * a);//220
+        // console.log(a * b + a);//220
+        // console.log(a - b % a);///10
+        // console.log(a * b / a);//10
+
+
+        // ********************************************************************
+
+        // Increment/decrement
+
+        // post increment and Pre incerement
+        // update value by 1
+
+        let x = 20;
+        x++;
+        console.log(x);//21
+
+        let y = 20;
+        //20
+        console.log(y++);
+        console.log(y);//21
+
+
+        let z = 10;
+        --z;//9
+        z--;//8
+        console.log(z);//8
+        console.log(--z);//7
+
+
+        let p = 30;
+        p++;//31
+        console.log(p);//31
+        console.log(p++)//31 32
+        --p;//31
+        p++;//32
+        p--;//31
+        ++p;///32
+        console.log(--p)//31
+        console.log(p++);//31 32
+        console.log(p);//32
+
+
+        // *************************************************************
+
+        // Assignment Operator
+        // =
+        // LSV=RSV
+
+
+        // -=,+=,/=,%=,*=
+
+        console.log("****************")
+
+        // var a = 10;
+        // console.log(a);
+
+        // b = a;
+        // console.log(b);//10
+
+        // -=,+=,/=,%=,*=
+
+
+        let a = 20;
+        let b = 10;
+
+        console.log(a -= b);//a=a-b; //10
+        console.log(a += b);//a=a+b;//10+10//20
+        console.log(a *= b);//a=a*b;//200
+        console.log(a /= b);//a=a/b;//20
+        console.log(a %= b);//a=a%b;//0
+
+
+        // **********************************************************
+
+
+        // equality operator
+        //==,===
+
+        //
+        let age = "20";
+        let age2 = 20;
+
+        // age2=age;
+        // console.log(age2);//20
+
+
+        // it check the value
+        console.log(age == age2);//true
+
+
+        // ===
+
+        console.log(typeof age);//string
+        console.log(typeof age2);//number
+
+        // it check the value with their data types
+        console.log(age === age2);//false
+
+
+        // ************************************************************************************
+
+
+
+        // comparsion op - compare two value > < >=,<=  !=,
+
+        let A = 20;
+        let B = 30;
+
+        console.log(A > B);//false
+        console.log(A < B);//true
+
+        // !- return true when conditions becomes false
+        //return false when conditions becomes true
+
+        console.log(a != b);//true
+
+
+        console.log(20 >= 20);//True
+        console.log(20 <= 20);//true
+
+
+        // *****************************************************************************
+
+        //Bitwise op- <<,>>,<<<,>>>, & , |
+        // &-Sets each bit to 1 if both bits are 1
+
+        console.log(5 & 1);//0001-1
+
+        // 0101
+        // 0001
+        // ______
+        // 0001
+
+
+        // 0101 | 0001
+        // 5 | 1
+
+        //0101
+
+        console.log(5 | 1);//5
+
+
+
+
+        // *******************************************************************
+
+
+        // Logical op- Used to check two or more condtions
+
+        //&& || !
+
+
+        // return true only when both conditions are true
+        // 0-false
+        // 1-true
+
+        // 0 && 1 =0
+        // 1 && 0 =0
+        // 0 && 0 =0
+        // 1 && 1=1
+
+        let p1 = 20;
+        let p2 = 30;
+        let p3 = 50;
+
+        console.log(p1 >= p2 && p1 >= p3)// 0 && 0 =0
+
+        console.log(p1 <= p2 && p1 <= p3); //1 && 1=1
+
+
+        // || - return true when one condition becomes true
+
+        // 0 || 1=1
+        // 1 || 0=1
+        // 1 || 1=1
+        // 0 || 0=0
+
+        console.log(p3 >= p1 || p1 >= p2);// true || false =1
+
+
+
+        // ! 
+        // // !- return true when conditions becomes false
+        //return false when conditions becomes true
+
+
+
+    </script>
+
+</body>
+
+</html>

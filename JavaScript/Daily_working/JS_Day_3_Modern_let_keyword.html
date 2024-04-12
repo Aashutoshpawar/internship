@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- let keyword -->
+
+    <script>
+        // let-Modern JS Features
+        //ES-6
+
+        //used to declared JS Variable
+
+        let name = "Manoj";
+        console.log(name);
+
+
+        //we can declared variable without initlization
+        let skill;
+        skill = "Modern JS";
+
+        console.log(skill);
+
+
+
+        // we can update value
+
+        let age = 20;
+        age = 23;
+        console.log(age)
+
+
+        //we can not redeclared varibale with same name
+
+        let emp_name = "ABC";
+        // let emp_name="XYZ";
+
+        console.log(emp_name);
+        //Uncaught SyntaxError: Identifier 'emp_name' has already been declared (at Day_3_Let_keyword.html:40:13)
+
+
+
+        //block level
+
+        let no = 100;
+        console.log(no);//  100
+
+        if (true) {
+            //block
+            let no = 200;
+            console.log(no);//200
+        }
+        console.log(no);//100
+
+
+
+        //
+        let Age = 20;
+        console.log(Age);//20
+        function A() {
+            let Age = 25;
+            console.log(Age);//25
+        }
+        A();
+
+        console.log(Age);//20
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

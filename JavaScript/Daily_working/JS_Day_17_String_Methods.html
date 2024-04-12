@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--String
+        collection or sequence of characters 
+        stored a single value in a "" or ''
+
+        indexing starts from 0
+        *Methods
+            slice 
+            substring
+            substr
+            charAT
+            charCodeat
+            indexof
+            lastindexof
+            concat
+            replace 
+            split
+            trim 
+            padstart
+            padend        -->
+    <script>
+        let str = "Modern JS";
+        console.log(str);
+
+        console.log(typeof str);    
+
+
+        var str2 = new String("React js");
+        console.log(str2);
+
+        //************************************************
+
+        //methods and properties
+        // length
+
+        var userName = "aashutosh pawar";
+        console.log(userName.length);
+
+
+        //slice - extract part of a string 
+        //slice - (start,end(ignored last))
+        let skill="Modern Js";
+        console.log(skill.slice(0,4));
+        console.log(skill);
+        console.log(skill.slice(3,5));
+
+
+
+
+        //substring() - similar to slice 
+        // - ve index not allowed 
+
+        console.log(skill.substring(3,5));
+        console.log(skill.substring(-3,5)); // not allowed 
+
+        //*************************************************
+
+
+        //substr - we can add element but not remove
+        //similar to splice
+        //syntax - substr(Start,length)
+
+        console.log(skill.substr(2,4)); //dern
+        console.log(skill.substr(3)); //ern Js
+
+        //**************************************************
+
+        let emp_skill="cloud computing";
+        console.log(emp_skill.toUpperCase());
+        console.log(emp_skill.toLowerCase());
+
+        //*************************************************
+
+        //indexof() - return first occurence index
+        //lastIndexOf() - return last occurence index
+        console.log(emp_skill.indexOf('c'));
+        console.log(emp_skill.lastIndexOf('c'));
+        
+        //charAt    
+        //charCodeAt()
+        console.log(emp_skill.charAt(3));
+        console.log(emp_skill.charCodeAt(6));
+
+        //****************************************************
+
+        //convert String to array
+        //toString()
+        //join()
+        //split()
+
+        let stri = "Front End Developer";
+        console.log(stri.split());
+        console.log(stri.split('')); // f r o n t e n d d e v e l o p e r 
+        console.log(stri.split(" ")); // "front" "end" "developer"
+
+        //*****************************************************
+
+        //concat - merge two or more string 
+        var skill1 ="AWS";
+        var skill2 = "React";
+
+        console.log(skill1+skill2);
+        console.log(`${skill1} ${skill2}`);
+        console.log(skill2.concat(skill1));
+
+        //*****************************************************
+        //replace()-replace old string with new one 
+        let Tech = "HTML CSS";
+        console.log(Tech.replace("CSS","MUI")); //it dosent modify original string 
+         
+        //****************************************************
+        
+        //trim() - to remove empty spces 
+        //trimStart() - remove leading white space 
+        //trimEnd() - remove trailing white space 
+        var emp_role = " React dev ";
+        console.log(emp_role.trim());
+
+        var data1 = emp_role.trimStart();
+        console.log(data1);
+        console.log(data1.length);
+
+
+
+        var data2 = emp_role.trimEnd();
+        console.log(data2.length);
+        console.log(data2);
+
+        //********************************************************
+        //includes - return boolean value 
+        //pad - attacjhed a string value to reaches to its maximum length
+
+        var a = "ABC";
+        console.log(a.padStart(10,"#")); //#######ABC len=10
+        console.log(a.padEnd(10,"*")); //ABC*****
+
+    </script>
+</body>
+</html>

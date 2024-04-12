@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .divbox{
+            height: 100px;
+            width: auto;
+            color: orange;
+            margin: 50px auto;
+        }
+        .newbox{
+            height: 400px;
+            width: auto;
+            margin: 50 auto;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--DOM methods and properties-->
+    <p id="para">Lorem, ipsum <b>dolor sit amet consectetur adipisicing elit.</b> quos, iure vero atque
+        enim vel amet explicabo at praesentium pariatur fuga aliquid! Ad sed ullam voluptas facere id?</p>
+        <div class="divbox"></div>
+        <div class="newbox"></div>
+
+        <hr>
+        <h1 id="data2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae optio ut voluptatibus repudiandae, assumenda eaque quasi odit voluptates, voluptate quos quisquam minus id praesentium aut temporibus sapiente error nostrum!</h1>
+        <button onclick="addclass()">addclass</button>
+        <button>remove class </button>
+        <button>toggle class</button>
+    <script>
+
+        //properties 
+        // innerHtml - return heml content including spacing and inside element
+
+        var res1 = document.getElementById('para').innerHTML;
+        console.log(res1);
+
+        var res2 = document.getElementById('para').innerText;
+        console.log(res2);
+
+        var res3 = document.getElementById('para').outerText;
+        console.log(res3);
+
+        //text content 
+        var res4 = document.getElementById('para').textContent;
+        console.log(res4);
+
+        //outer Html - return whole html content 
+        var5 = document.getElementById('para').outerHTML;
+        console.log(var5);
+
+        //***********************************************
+
+        //classList - return a collection of class list 
+        var6 = document.getElementById('para').classList;
+        console.log(var6);
+
+        //3 methods
+        //1.add
+        //2.remove
+        //3.toggle
+        
+
+        function addclass(){
+            document.getElementById('divbox').classList.add('newbox')
+        }
+
+
+
+        //***************************************
+        var res8 = document.getElementById('para').className;
+        console.log(res8);
+
+        //***************************************************
+        //attribute
+        //getAttribute
+        //setAttribute
+
+        //getAttributeNames
+        var res9 = document.getElementById('data2').getAttribute('id');
+        console.log(res9);
+
+
+        //setAttributeName
+        var res10 = document.getElementById('data2').setAttribute('class','newaddedbox');
+
+        console.log(res10);
+
+        //*****************************************************
+        //appendChild()
+        //replaceChild()
+        //hasAttribut()
+        //createElement()
+        //createTextNode()
+
+        //create html elements
+        var marquee = document.createElement('mar');
+        mar.innerText="hello dynamic marquee Element";
+        document.body.appendChild('martag');
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //methods - Used to perform multiple operations on an Array
+//const arr1 = [100,200,300,400];
+//console.log(arr1); 
+
+//to add element in array 
+
+//push - to add element to last index of the array 
+//arr1.push(1000);  
+//console.log("After adding new element using push method: ",arr1) ;  
+//arr1.push
+
+
+
+//unshift - add element to the starting index
+//it modify the original array 
+//return length of array 
+//arr1.unshift(50);   
+//console.log("Array after adding a new element at beginning using unshift method :",arr1);
+
+
+//pop - remove elememt from last index
+//const arr2 = [10,20,30,50];
+//arr2.pop();
+
+//shift - remove element from stating index 
+//arr2.shift();
+
+//splice - to add or remove multiple elements in an array
+//syntax 
+        // splice(startIndex , how many items you want to delete , item1 ,item2
+        //modified orignal array
+        //to remove
+        //const arr3 = [1000,2000,3000,4000,5000];
+        //console.log(arr3);
+        //console.log(arr3.splice(0));
+        
+        //to add
+        //const arr4=[50,100,150,200,250,300];
+        //console.log(arr4.splice(2,2,500));
+        //console.log(arr4);
+
+        //substring() - it is similar to splice
+
+
+        //slice() - extract specific part of the array 
+        //it returns new array
+        //it wont modify original array sso use it with console.log
+        //syntax - slice(Start,end(last index ignore));
+        //arr5 = ["html","css","modernjs","js","aws","nodejs"];
+        //console.log(arr5.slice(3));
+        //console.log(arr5);
+
+        //substring()  -
+        //const str="MERN Stack";
+        //console.log(str.substring(0,3));
+
+
+        arr6=[10,20,30,40,50,60,70,80,90];
+
+        //at(index) - return an element of spwcific index 
+        console.log(arr6.at(5));
+        //indexOf(any value of arr) - return index of a specific element 
+        console.log(arr6.indexOf(70))
+        //lastIndexOf() - return index of specific element of last occurence 
+        console.log(arr6.lastIndexOf(70));
+
+
+
+//HW - rewise and do R & D
+
+    </script>
+</body>
+</html>

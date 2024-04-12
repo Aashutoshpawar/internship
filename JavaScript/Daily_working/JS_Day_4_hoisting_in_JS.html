@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Hoisting 
+    
+        we can declared variable after used
+        we can used variable before declartion
+
+        i.e JS Variable have by default behavior that variable declartion goes to the top of scope
+    
+
+        The variable is in a "temporal dead zone" from the start of the block until it is declared:
+
+
+        *******************************************************************
+
+        Declare Your Variables At the Top !
+
+Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.
+
+If a developer doesn't understand hoisting, programs may contain bugs (errors).
+
+To avoid bugs, always declare all variables at the beginning of every scope.
+
+Since this is how JavaScript interprets the code, it is always a good rule.
+
+JavaScript in strict mode does not allow variables to be used if they are not declared.
+Study "use strict" in the next chapter.
+    -->
+
+    <script>
+
+        "use strict";
+
+        // JavaScript Declarations are Hoisted
+
+
+        // var is a hoisted
+
+        a = 10;
+        console.log(a);//
+        var a;
+
+
+        // **************************************************************
+
+        // let and const are not hoisted
+
+        // skill = "ReactJS";
+        // console.log(skill);
+        // let skill;
+
+        //Cannot access 'skill' before initialization
+
+
+
+        // name;
+        // console.log(name);
+        // var name="John";
+
+
+        
+        
+        console.log(emp_id);//undefined
+        emp_id=10;
+        var emp_id;
+    </script>
+
+
+
+
+</body>
+
+</html>

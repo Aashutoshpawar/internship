@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var math = Math;
+        console.log(math);
+        console.log(math.pi);
+        console.log(Math.pi);
+        console.log(Math.LN10);
+
+    //*************************************
+    //min and max property
+    //.log(math.min(10,30,500,200,600));
+    //console.log(math.max(10,30,500,200,600));
+
+    var arr = [100,400,450,600,50,250];
+    console.log(math.min(arr));
+    console.log(math.max(arr));
+
+
+    //modern js
+    //spread operator
+    //console.log(main.min(...arr));
+    //console.log(math.max(...arr));
+
+    //****************************************
+
+    //round() - return rounded value
+    //floor() - return nearenst smallest integer
+    //ceil() - return nearest largest integer
+    //trunc() - remove decimal and return value
+
+
+    console.log(Math.round(23.45));
+    console.log(Math.floor(23.45));
+    console.log(Math.ceil(23.45));
+    console.log(Math.trunc(23.45));
+
+    console.log(Math.round(45.56));
+    console.log(Math.floor(45.56));
+    console.log(Math.ceil(45.56));
+    console.log(Math.trunc(45.56));
+
+    //*********************************************
+    //fround()
+    console.log(Math.fround(23.2));
+
+    //********************************************
+    //random 
+    console.log(Math.random());
+    alert(Math.random()*10000);
+    alert(Math.trunc(math.random()*10000));
+
+    //*********************************************
+
+    //cbrt
+    //sqrt
+    //pow
+
+    console.log(Math.cbrt(5));
+    console.log(Math.sqrt(8));
+    console.log(Math.pow(10));
+
+    
+
+
+    </script>
+</body>
+</html>

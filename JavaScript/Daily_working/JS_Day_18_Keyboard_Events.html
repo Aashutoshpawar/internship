@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onkeypress="demo1()" onkeyup="demo2()" onkeydown="demo3()" id="body">
+    <!-- keyboard events -->
+
+
+    <!-- onkeypress-when we pressed keyboard button
+
+    onkeyup=when we realsed keyboard button 
+
+
+    onkeydown- when we pressed down keys- ctrl,alt,arrow keys
+-->
+
+    <script>
+
+        // <!-- onkeypress-when we pressed keyboard button
+
+        const demo1 = () => {
+
+            document.getElementById('body').style.backgroundColor = "orange";
+        }
+
+
+        // **************************
+        // onkeyup=when we realsed keyboard button 
+
+        const demo2 = () => {
+            document.getElementById('body').style.backgroundColor = "red";
+        }
+
+
+        // *********************************************8
+
+        const demo3=()=>{
+            document.getElementById('body').style.backgroundColor="magenta";
+        }
+    </script>
+
+
+</body>
+
+</html>
